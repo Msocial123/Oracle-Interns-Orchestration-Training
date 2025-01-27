@@ -1,1 +1,24 @@
 Install Rancher - https://github.com/rancher-sandbox/rancher-desktop/releases
+  4 docker create ubuntu /bin/bash
+   5 docker ps -a
+   6 clear
+   7 docker ps
+   8 docker ps -a
+   9 clear
+  10 docker start ec661f57674c
+  11 docker ps -a
+  12 clear
+  13 docker create -it --name WebServer nginx /bin/bash
+  14 docker ps -a
+  15 docker start WebServer
+  16 docker ps
+  17 clear
+  18 docker create -it --name example-container ubuntu /bin/bash
+  19 docker ps
+  20 docker ps -a
+  21 docker start example-container
+  22 docker ps
+  23 docker attach example-container
+  24 docker ps
+  25 docker start example-container
+  26 docker attach example-container
