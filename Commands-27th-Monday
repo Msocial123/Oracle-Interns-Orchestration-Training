@@ -22,3 +22,25 @@ Install Rancher - https://github.com/rancher-sandbox/rancher-desktop/releases
   24 docker ps
   25 docker start example-container
   26 docker attach example-container
+    30 docker run -td --name web-nginx -p 8080:80 nginx:latest
+  31 docker ps
+  32 docker port web-nginx
+  33 docker run -td --name web-nginx-1 -p 8082:80 nginx:latest
+  34 docker attach web-nginx-1
+  35 docker exec -it web-nginx-1 /bin/bash
+  36 docker ps
+  37 history
+  38 docker pull muralisocial123/oracle-web-app:1.0
+  39 docker pull muralisocial123/fss-web-app:latest
+  40 docker run -td --name fss-web-example-1 -p 83:80 muralisocial123/fss-web-app:latest
+  41 history
+  42 docker ps
+  43 docker ps
+  44 docker stop  fss-web-example-1
+  45 docker ps
+  46 docker rm cf99011708c5
+  47 docker rm -f cf99011708c5
+  48 docker images
+  49 docker rmi muralisocial123/fss-web-app
+  50 docker rmi -f muralisocial123/fss-web-app
+  51 docker images
