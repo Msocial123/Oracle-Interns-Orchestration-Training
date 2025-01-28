@@ -14,3 +14,6 @@
   28 docker ps -a
   29 docker ps
   30 docker ps -a
+  7 docker run -it --name C1 --privileged=true --volumes-from B1 ubuntu /bin/bash
+  38 docker start B1
+  39 docker attach B1
