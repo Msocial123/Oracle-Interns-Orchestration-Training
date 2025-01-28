@@ -1,0 +1,16 @@
+ 15 docker run -it --name A1 -v /data ubuntu /bin/bash
+  16 docker volume ls
+  17 docker ps -a
+  18 docker rm A1
+  19 docker volume ls
+  20 docker ps
+  21 docker run -it --name A1 -v /data ubuntu /bin/bash
+  22 docker volume ls
+  23 docker run -it --name B1 -v mydata:/DevOps ubuntu /bin/bash
+  24 docker volume ls
+  25 docker run -it --name Sample -v E:\Trainings\Oracle-Interns-Orchestration-Training\Data:/Oracle ubuntu /bin/bash
+  26 docker volume ls
+  27 docker rm -f Sample
+  28 docker ps -a
+  29 docker ps
+  30 docker ps -a
