@@ -7,3 +7,21 @@
     3  apt-get install iputils-ping -y
     4  apt-get install iproute2 -y
     5  ping 172.17.0.2
+
+    33 docker network inspect bridge
+    34 docker network create mynetwork --subnet=10.0.0.0/16 --gateway=10.0.10.100
+    35 docker network ls
+    36 docker network inspect mynetowrk
+    37 docker network inspect mynetwork
+    38 docker run -it --net mynetowrk --name C1 ubuntu /bin/bash
+    39 docker run -it --net mynetwork --name C1 ubuntu /bin/bash
+    40 docker run -it --net mynetwork --name D1 ubuntu /bin/bash
+    41 docker inspect D1
+    42 docker p s
+    43 docker ps
+    44 docker inspect D1
+    45 docker attach B1
+    46 docker ps
+    47 docker network connect bridge D1
+    48 docker attach B1
+    49 docker attach D1
