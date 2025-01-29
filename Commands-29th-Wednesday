@@ -1,0 +1,9 @@
+ apt-get update -y
+    3  apt-get install iputils-ping -y
+    4  apt-get install iproute2 -y
+    5  ping 172.17.0.2
+
+     apt-get update -y
+    3  apt-get install iputils-ping -y
+    4  apt-get install iproute2 -y
+    5  ping 172.17.0.2
