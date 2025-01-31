@@ -1,0 +1,26 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata:
+  name: Oracle-web-app-deployment 
+spec: # Define the Behavior of the Deployment 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: oracle
+  template:
+    metadata:
+      labels:
+        app: oracle 
+    spec:  # It is goign to define the container Definantion 
+      containers:
+        - name: oracle-cont 
+          image: muralisocial123/oracle-web-app:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi 
+            limits:
+              cpu:200m 
+              memory: 256Mi  

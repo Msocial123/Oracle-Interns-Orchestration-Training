@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  college-app:
+    image: muralisocial123/college-app 
+    container_name: college
+    ports:
+      - 88:80
+  oracle-web-app:
+    image: muralisocial123/oracle-web-app 
+    container_name: oracle
+    ports:
+      - 89:80
