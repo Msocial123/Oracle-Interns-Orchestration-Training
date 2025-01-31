@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: oracle-cont1
-          image: muralisocial123/transcation-bank-app:latest
+          image: muralisocial123/transcation-app:latest
           ports:
             - containerPort: 3000
           resources:
