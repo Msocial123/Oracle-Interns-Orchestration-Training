@@ -1,0 +1,5 @@
+162  kubectl apply -f Deployment.yaml
+  163  kubectl get deployments
+  164  kubectl get pods
+  165  kubectl get pods -o wide
+  166  kubectl get deployments -o wide
