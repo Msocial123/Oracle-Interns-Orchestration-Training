@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata:
-  name: Oracle-web-app-deployment 
+  name: oracle-web-app-deployment 
 spec: # Define the Behavior of the Deployment 
   replicas: 3
   selector:
