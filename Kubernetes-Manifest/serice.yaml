@@ -1,0 +1,14 @@
+apiVersion: v1 
+kind: Service 
+metadata:
+  name: Oracle-app-svc 
+spec: 
+  selector:
+    app: oracle 
+  ports:
+    - name: oralce 
+      port: 80
+      targetPort: 80
+      protocol: TCP 
+  type: LoadBalancer    
+    
